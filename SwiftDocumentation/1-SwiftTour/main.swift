@@ -577,7 +577,7 @@ possibleInteger = .some(100)
 
 /*
  body 이전에 where문을 사용해서 제너릭 타입이 따라야할 프로토콜/클래스를 지정할 수 있다.
- <T: Equatable>과 <T> ... where T: Equatable을 동일하다. 
+ <T: Equatable>과 <T> ... where T: Equatable을 동일하다.
  */
 func anyCommentElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool where T.Element: Equatable, T.Element == U.Element {
     
