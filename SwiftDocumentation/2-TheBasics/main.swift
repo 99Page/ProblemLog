@@ -338,7 +338,7 @@ enum SandwichError: Error {
 //  MARK: Debuggin with assertions
 
 let age = -3
-assert(age >= 0, "A person`s age can`t be less than zero")
+//assert(age >= 0, "A person`s age can`t be less than zero")
 
 if age > 0 {
     print("You can ride the roller-coaster or the ferris wheel.")
@@ -347,7 +347,7 @@ if age > 0 {
 } else {
     
     // 이미 조건을 검사한 경우에 사용한다.
-    assertionFailure("A person`s age can`t be less than zero")
+//    assertionFailure("A person`s age can`t be less than zero")
 }
 
 //  MARK: Enforcing preconditions
