@@ -318,13 +318,13 @@ if #available(iOS 10, macOS 10.12, *) {
     
 }
 
-//  guard와 함께 사용 
+//  guard와 함께 사용
 func chooseBestColor() -> String {
     guard #available(macOS 10.12, *) else {
        return "gray"
     }
-    let colors = ColorPreference()
-    return colors.bestColor
+//    let colors = ColorPreference()
+    return "color"
 }
 
 
