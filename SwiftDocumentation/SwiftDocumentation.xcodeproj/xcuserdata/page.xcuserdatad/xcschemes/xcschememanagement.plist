@@ -49,6 +49,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Structures and Classes.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>SwiftDocumentation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
