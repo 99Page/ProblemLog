@@ -93,7 +93,7 @@ for item in library {
 var things: [Any] = []
 
 //  Any 배열에 모든 타입을 넣고 있다. optional도 가능
-//  그런데 optional은 Any로 사용될 때 as로 명시해줘야 한다. 
+//  그런데 optional은 Any로 사용될 때 as로 명시해줘야 한다.
 things.append(0)
 things.append(0.0)
 things.append(42)
