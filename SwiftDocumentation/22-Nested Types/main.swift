@@ -12,7 +12,6 @@ import Foundation
 //  다른 타입 내부에 타입 생성하기.
 //  중첩의 수에 제한은 없다
 
-
 //  MARK: Nested types in action
 
 struct BlackjackCard {

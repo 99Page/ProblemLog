@@ -19,6 +19,9 @@ import Foundation
  - Attached macros
  */
 
+//  매크로는 스위프트 5.9 베타 기능으로 컴파일이 불가능해서
+//  코드 없이 개념만 정리
+
 //  MARK: Freestanding macros
 
 //  값을 만들고 컴파일 타임에 액션을 수행한다.
@@ -43,3 +46,42 @@ struct SundaeToppings: OptionSet {
 }
 
 //  macros는 컴파일 안되서 패스 
+
+/*
+ OptionSet 매크로는 내부의 private enum을 읽고
+ contant value를 생성해준다
+ */
+
+
+//@OptionSet<Int>
+//struct SundaeToppings {
+//    private enum Options: Int {
+//        case nuts
+//        case cherry
+//        case fudge
+//    }
+//}
+
+//  MARK: Macro declarations
+
+/*
+ 매크로는 선언과 실행이 분리된다.
+ 아래 주석은 매크로 선언 예제
+ */
+
+// public macro OptionSet<RawType>() = #externalMacro(module: "SwiftMacros", type: "OptionSetMacro")
+
+// attached macros는 UpperCamelCase
+// freestanding macross는 lowerCamelCase
+
+// macros는 항상 public
+
+
+//@attached(member)
+//@attached(conformance)
+//public macro OptionSet<RawType>() =
+//        #externalMacro(module: "SwiftMacros", type: "OptionSetMacro")
+
+//@freestanding(expression)
+//public macro line<T: ExpressibleByIntegerLiteral>() -> T =
+//        /* ... location of the macro implementation... */
