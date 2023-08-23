@@ -453,10 +453,13 @@ for object in objects {
 //  MARK: Optional protocol requirements
 
 /*
- 프로토콜의 내부를 전부 옵셔널하게 만든다.
+ Objective-c와 호환되는 코드 작성 가능
+ class에는 사용 불가능
  */
 
 @objc protocol CounterDataSource {
+    
+    //  아래 타입들은 자동으로 optional이 된다 
     @objc optional func increment(forCount count: Int) -> Int
     @objc optional var fixedIncrement: Int { get }
 }
