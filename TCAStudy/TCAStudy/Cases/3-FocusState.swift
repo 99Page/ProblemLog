@@ -53,6 +53,8 @@ struct FocusDemoView: View {
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             VStack {
+                
+                //  state에 접근하는 것 같지만 실제로는 Action에 정의된 binding에 접근
                 TextField("Username", text: viewStore.$username)
                     .focused($focusedField, equals: .username)
                 
