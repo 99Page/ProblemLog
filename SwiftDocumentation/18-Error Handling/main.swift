@@ -26,13 +26,14 @@ enum VendingMachineError: Error {
  
  throw의 성능은 return과 비슷하다
  다른 언어 처럼 call stack 작업이 없다.
+ 
+ 자바의 경우 throw하면 이 함수를 호출하기까지의 함수를 모두 호출하는데
+ 이 작업이 없다는 뜻인거 같다.
  */
 
 //  MARK: Propagating errors using thorwing functions
 
 //  throw 키워드 사용
-//  throw는 호출한 쪽에서 에러 처리
-//  나머지는 함수 내부에서 에러 처리
 
 func canThrowErrors() throws -> String {
     return ""
@@ -156,7 +157,7 @@ let photo = try! loadImage(path: "")
 
 //  MARK: Specifying cleanup actions
 
-//  throws 되기 전 실행하기 위해서 defet를 사용할 수 있다.
+//  throws 되기 전 실행하기 위해서 defer를 사용할 수 있다.
 
 func processFile(filename: String) throws {
     if exists(filename) {
