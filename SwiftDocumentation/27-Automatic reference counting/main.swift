@@ -219,6 +219,10 @@ johnCustomer = nil
  */
 
 //  MARK: Unowned optional references
+
+//  위에서는 unowned는 optional 안된다고 했지만
+//  스위프트 5.0부터 가능
+
 class Department {
     var name: String
     var courses: [Course]
@@ -326,8 +330,11 @@ paragraph = nil
 
 /*
  capture list를 사용해서 문제 해결 가능
- 
  클로저 내부에서 self를 참조할 때는 self 사용을 권장한다.
+ 
+ 클로저 파트에서는 자기 참조를 할 때 강한 참조 문제 해결하는 것으로 읽었는데
+ 자동으로 해주는 건지는 모르겠음 
+ If you assign a closure to a property of a class instance, and the closure captures that instance by referring to the instance or its members, you will create a strong reference cycle between the closure and the instance. Swift uses capture lists to break these strong reference cycles. For more information, see Strong Reference Cycles for Closures.
  */
 
 //  MARK: Weak andunowned references
