@@ -147,7 +147,7 @@ class InitSuperClass: InitProtocol {
 //  super class에서 init 상속받고
 //  프로토콜에서도 init이 정의되면
 //  required override라고 선언
-//  단 init이 parameter가 없어야한다
+//  parameter 있어도 동일
 
 protocol DefaultInitProtocol {
     init()
@@ -165,6 +165,7 @@ class DefaultInitSubClass: DefaultInitSuperClass, DefaultInitProtocol {
     }
 }
 
+
 //  MARK: Protocol as types
 
 /*
@@ -174,7 +175,7 @@ class DefaultInitSubClass: DefaultInitSuperClass, DefaultInitProtocol {
  사용 예제
  - 제너릭
  - opaque type
- - boxec protocol
+ - boxed protocol
  
  셋다 추후 다른 문서에서 설명
  */
@@ -369,7 +370,7 @@ extension SnakesAndLadders: PrettyTextRepresentable {
 
 //  MARK: Class-only protocols
 
-//  AnyObjecy 프로토콜을 채택할 타입을 클래스로 제한
+//  AnyObject 프로토콜을 채택할 타입을 클래스로 제한
 
 protocol SomeClassOnlyProtocol: AnyObject {
     

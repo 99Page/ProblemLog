@@ -100,6 +100,8 @@ struct Square: Shape {
 //  Shape 타입을 반환하는 함수
 //  concrete type 대신 protocol을 반환
 //  some 없이도 사용 가능
+
+//  모듈화 했을 때 모듈을 사용하는 클라이언트쪽에 concrete type을 숨긴다.
 func makeTrapezoid() -> some Shape {
     let top = Triangle(size: 2)
     let middle = Square(size: 2)
@@ -110,6 +112,14 @@ func makeTrapezoid() -> some Shape {
     )
     
     return trapezoid
+}
+
+func shape(value: Bool) -> Shape {
+    if value {
+        return Triangle(size: 5)
+    } else {
+        return Square(size: 5)
+    }
 }
 
 let trapezoid = makeTrapezoid()
@@ -129,13 +139,17 @@ func join<T: Shape, U: Shape>(_ top: T, _ bottom: U) -> some Shape {
 //  아래는 컴파일 에러 발생
 //  Square와 FlippedShape는 서로 다른 타입
 //  같은 타입만 반환해야한다
+//  some을 제거하면 문제가 없다
+//  문서에는 없지만 some/any를 사용하지 않을 경우 알아서 추론해주는 것 같다.
 
 //func invalidFlip<T: Shape>(_ shape: T) -> some Shape {
 //    if shape is Square {
 //        return shape // Error: return types don't match
 //    }
+//
 //    return FlippedShape(shape: shape) // Error: return types don't match
 //}
+
 
 //  MARK: Boxed protocol types
 
@@ -146,8 +160,11 @@ struct VerticalShapes: Shape {
     //  boxed protocol type은 any 사용
     //  any의 타입은 같은 프로토콜은 준수하지만 다른 concrete type을 저장할 수 있다.
     
-    //  제너릭을 사용할 경우 type을 직접 지정하고 모두 같은 타입이어야한다.
-    //  [some Shape]는 모두 같은 타입
+    //  제너릭을 사용할 경우 type을 직접 지정하고 모두 같은 타입이어야한다. type identity는 visible.
+    //  [some Shape]는 모두 같은 타입 type identity는 hidden
+    
+    //  type identity = 타입의 이름
+    
     var shapes: [any Shape]
     func draw() -> String {
         return shapes.map { $0.draw() }.joined(separator: "\n\n")
@@ -163,6 +180,11 @@ print(vertical.draw())
 
 /*
  둘의 핵심적인 차이는 type identity preserver의 유무
+ opaque type이 type identity를 보존하는 이유는?
+ 다른 타입을 반환하는지 판단해야하니까
+ 
+ opaque type끼리는 == 연산 가능. 타입이 같으니까
+ boxed protocol type은 == 연산 불가능. 타입 같은지 모르니까 
  */
 
 func protoFlip<T: Shape>(_ shape: T) -> Shape {

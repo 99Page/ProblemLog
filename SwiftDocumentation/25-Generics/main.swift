@@ -307,8 +307,6 @@ func allItemsMatch<C1: Container, C2: Container> (_ someContainer: C1, _ another
         }
     }
 
-
-    // All items match, so return true.
     return true
 }
 

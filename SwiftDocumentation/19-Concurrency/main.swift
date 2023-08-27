@@ -231,5 +231,5 @@ extension TemperatureLogger {
 /*
  concurrency domain: task와 actor 내부에 있는 mutable state(property)
  
- sendable type: concurrency domatin 사이에서 공유되는 값 
+ sendable type: concurrency domatin 사이에서 공유되는 값
  */
