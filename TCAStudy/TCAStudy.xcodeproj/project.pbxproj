@@ -15,6 +15,7 @@
 		1554B0E82A95FBAA00DCFD9A /* 1-Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0E72A95FBAA00DCFD9A /* 1-Counter.swift */; };
 		1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0E92A95FE1700DCFD9A /* 2-OptionalState.swift */; };
 		1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0EB2A9600CE00DCFD9A /* 3-FocusState.swift */; };
+		15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6A4E42A9DD87C00194811 /* BasicsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1554B0E72A95FBAA00DCFD9A /* 1-Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1-Counter.swift"; sourceTree = "<group>"; };
 		1554B0E92A95FE1700DCFD9A /* 2-OptionalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2-OptionalState.swift"; sourceTree = "<group>"; };
 		1554B0EB2A9600CE00DCFD9A /* 3-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-FocusState.swift"; sourceTree = "<group>"; };
+		15C6A4E42A9DD87C00194811 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
+		15C6A4E62A9DE49800194811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +62,10 @@
 		1554B0D02A95F87F00DCFD9A /* TCAStudy */ = {
 			isa = PBXGroup;
 			children = (
+				15C6A4E62A9DE49800194811 /* Info.plist */,
 				1554B0E42A95F9E800DCFD9A /* Global */,
 				1554B0E22A95F9D400DCFD9A /* Cases */,
+				15C6A4E22A9DD84600194811 /* Tour of TCA */,
 				1554B0D52A95F87F00DCFD9A /* Assets.xcassets */,
 				1554B0D72A95F87F00DCFD9A /* Preview Content */,
 			);
@@ -92,6 +97,22 @@
 				1554B0D32A95F87F00DCFD9A /* ContentView.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		15C6A4E22A9DD84600194811 /* Tour of TCA */ = {
+			isa = PBXGroup;
+			children = (
+				15C6A4E32A9DD85300194811 /* 1-The basics  */,
+			);
+			path = "Tour of TCA";
+			sourceTree = "<group>";
+		};
+		15C6A4E32A9DD85300194811 /* 1-The basics  */ = {
+			isa = PBXGroup;
+			children = (
+				15C6A4E42A9DD87C00194811 /* BasicsView.swift */,
+			);
+			path = "1-The basics ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */,
+				15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */,
 				1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */,
 				1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */,
 				1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */,
@@ -306,6 +328,7 @@
 				DEVELOPMENT_TEAM = 5KXF46DKDC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,6 +358,7 @@
 				DEVELOPMENT_TEAM = 5KXF46DKDC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

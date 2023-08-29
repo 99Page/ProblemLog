@@ -22,6 +22,12 @@ struct ContentView: View {
                     OptionalBasics()
                 }))
             }
+            
+            NavigationLink("The basics") {
+                BasicsView(store: Store(initialState: CounterFeature.State()) {
+                    CounterFeature()
+                }) 
+            }
         }
     }
 }
