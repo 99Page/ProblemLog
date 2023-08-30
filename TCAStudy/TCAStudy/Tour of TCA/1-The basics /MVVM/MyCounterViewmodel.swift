@@ -11,12 +11,14 @@ import ComposableArchitecture
 
 final class MyCounterViewmodel: ObservableObject {
     @Published private(set) var myCounterModel = MyCounterModel()
-    @Dependency(\.continuousClock) var clock 
+    let clock: any Clock<Duration>
     
     private let numberFactService: MyNumberFactServiceProtocol
     
-    init(numberFactService: MyNumberFactServiceProtocol) {
+    init(numberFactService: MyNumberFactServiceProtocol = MyNumberFactService(),
+         clock: any Clock<Duration> = ContinuousClock()) {
         self.numberFactService = numberFactService
+        self.clock = clock
     }
     
     func onDecementedButtonTapped() {
@@ -44,6 +46,7 @@ final class MyCounterViewmodel: ObservableObject {
             myCounterModel.isLoadingFact = false
         }
         
+        debugPrint("onGetFactButtonTapped called")
         myCounterModel.isLoadingFact = true
         myCounterModel.fact = nil
         
@@ -56,7 +59,8 @@ final class MyCounterViewmodel: ObservableObject {
     
     //  TCA의 action과 달리 View에 불필요한 기능을 숨길 수 있다.
     @MainActor
-    private func onFetchSuccess(_ fact: String?) {
+    fileprivate func onFetchSuccess(_ fact: String?) {
+        debugPrint("onFetchSucces called")
         myCounterModel.fact = fact
     }
     

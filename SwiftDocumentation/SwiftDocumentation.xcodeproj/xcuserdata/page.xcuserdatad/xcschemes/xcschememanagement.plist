@@ -7,37 +7,37 @@
 		<key>Access Control.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Advanced Operators.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>12</integer>
 		</dict>
 		<key>Automatic reference counting.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>23</integer>
 		</dict>
 		<key>BasicOperators.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Closure.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>14</integer>
 		</dict>
 		<key>Collection Types.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Concurrency.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>11</integer>
 		</dict>
 		<key>Contorl Flow.xcscheme_^#shared#^_</key>
 		<dict>
@@ -47,37 +47,37 @@
 		<key>Control Flow.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>6</integer>
 		</dict>
 		<key>Deinitialization.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>26</integer>
 		</dict>
 		<key>Enumerations.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>21</integer>
 		</dict>
 		<key>Error Handling.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>29</integer>
 		</dict>
 		<key>Extensions.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>27</integer>
 		</dict>
 		<key>Functions.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>20</integer>
 		</dict>
 		<key>Generics.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Inheritance.xcscheme_^#shared#^_</key>
 		<dict>
@@ -87,7 +87,7 @@
 		<key>Initialization.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>4</integer>
 		</dict>
 		<key>LanguageGuide.xcscheme_^#shared#^_</key>
 		<dict>
@@ -97,62 +97,62 @@
 		<key>Macros.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>28</integer>
 		</dict>
 		<key>Memory Safety.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Nested Types.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>30</integer>
 		</dict>
 		<key>Opaque and Boxed types.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>22</integer>
 		</dict>
 		<key>Optional Chainig.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>15</integer>
 		</dict>
 		<key>Properties.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Protocols.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Strings and Characters.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Structures and Classes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>17</integer>
 		</dict>
 		<key>Subscripts.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>SwiftDocumentation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>1</integer>
 		</dict>
 		<key>TheBasics.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>25</integer>
 		</dict>
 		<key>Type Casting.xcscheme_^#shared#^_</key>
 		<dict>

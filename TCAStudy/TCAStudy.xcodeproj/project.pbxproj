@@ -11,6 +11,7 @@
 		1504B1DA2A9EDE68006078B2 /* MyCounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1D92A9EDE67006078B2 /* MyCounterModel.swift */; };
 		1504B1DC2A9EDEBF006078B2 /* MyCounterViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1DB2A9EDEBF006078B2 /* MyCounterViewmodel.swift */; };
 		1504B1DE2A9EDF84006078B2 /* MyNumberFactService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1DD2A9EDF84006078B2 /* MyNumberFactService .swift */; };
+		1504B1E12A9EE6D1006078B2 /* TheBasicsMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */; };
 		1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0D12A95F87F00DCFD9A /* TCAStudyApp.swift */; };
 		1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0D32A95F87F00DCFD9A /* ContentView.swift */; };
 		1554B0D62A95F87F00DCFD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1554B0D52A95F87F00DCFD9A /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		1504B1D92A9EDE67006078B2 /* MyCounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCounterModel.swift; sourceTree = "<group>"; };
 		1504B1DB2A9EDEBF006078B2 /* MyCounterViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCounterViewmodel.swift; sourceTree = "<group>"; };
 		1504B1DD2A9EDF84006078B2 /* MyNumberFactService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyNumberFactService .swift"; sourceTree = "<group>"; };
+		1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsMVVMTests.swift; sourceTree = "<group>"; };
 		1554B0CE2A95F87F00DCFD9A /* TCAStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1554B0D12A95F87F00DCFD9A /* TCAStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAStudyApp.swift; sourceTree = "<group>"; };
 		1554B0D32A95F87F00DCFD9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1504B1DF2A9EE6B3006078B2 /* 1-The basics  */ = {
+			isa = PBXGroup;
+			children = (
+				1560C6662A9EC2650005708E /* TheBasicsTests.swift */,
+				1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */,
+			);
+			path = "1-The basics ";
+			sourceTree = "<group>";
+		};
 		1554B0C52A95F87E00DCFD9A = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +155,7 @@
 		1560C6652A9EC2070005708E /* Tour of TCA */ = {
 			isa = PBXGroup;
 			children = (
-				1560C6662A9EC2650005708E /* TheBasicsTests.swift */,
+				1504B1DF2A9EE6B3006078B2 /* 1-The basics  */,
 			);
 			path = "Tour of TCA";
 			sourceTree = "<group>";
@@ -313,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1504B1E12A9EE6D1006078B2 /* TheBasicsMVVMTests.swift in Sources */,
 				1560C6672A9EC2650005708E /* TheBasicsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

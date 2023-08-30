@@ -80,7 +80,7 @@ final class TheBasicsTests: XCTestCase {
         await clock.advance(by: .seconds(1))
         
         //  호출된 모든 Action은 테스트되어야 한다.
-        //  timcerTicking은 toggleTimerButtonTapped를 통해서 호출된다. 
+        //  timcerTicking은 toggleTimerButtonTapped를 통해서 호출된다.
         await store.receive(.timerTicking) {
             $0.count = 1
         }
@@ -98,12 +98,15 @@ final class TheBasicsTests: XCTestCase {
         } withDependencies: {
             // 모든 테스트마다 이런식으로 기능을 정의해줘야 하는건 코드의 중복이 생긴다.
             // 테스트 하는 경우에는 protocol이 더 적합해 보인다.
+            // 대신 API 기능이 필요없을 때는 굳이 주입해주지 않아도 된다. 
             $0.numberFact = NumberFactCliet { "count \($0)" }
             //  ImmerdiateClock 사용하지 않으면 내부에서 계속 Clock이 동작하면서
             //  Action이 실행된 상태가 된다.
             $0.continuousClock = ImmediateClock()
         }
         
+        //  비동기 함수 테스트에 장점이 있음
+        //  각 .액션마다의 테스트 분리 가능
         await store.send(.getFactButtonTapped) {
             $0.isLoadingFact = true
         }
