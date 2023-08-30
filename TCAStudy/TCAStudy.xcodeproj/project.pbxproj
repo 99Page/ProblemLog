@@ -17,6 +17,7 @@
 		1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0EB2A9600CE00DCFD9A /* 3-FocusState.swift */; };
 		1560C6672A9EC2650005708E /* TheBasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C6662A9EC2650005708E /* TheBasicsTests.swift */; };
 		15BD54512A9ED0270040D9E4 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BD54502A9ED0270040D9E4 /* CounterFeature.swift */; };
+		15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BD54522A9ED5960040D9E4 /* NumberFactService.swift */; };
 		15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6A4E42A9DD87C00194811 /* BasicsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		1560C65C2A9EC2040005708E /* TCAStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1560C6662A9EC2650005708E /* TheBasicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsTests.swift; sourceTree = "<group>"; };
 		15BD54502A9ED0270040D9E4 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		15BD54522A9ED5960040D9E4 /* NumberFactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactService.swift; sourceTree = "<group>"; };
 		15C6A4E42A9DD87C00194811 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
 		15C6A4E62A9DE49800194811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,16 @@
 			path = "Tour of TCA";
 			sourceTree = "<group>";
 		};
+		15BD54542A9EDB930040D9E4 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				15C6A4E42A9DD87C00194811 /* BasicsView.swift */,
+				15BD54502A9ED0270040D9E4 /* CounterFeature.swift */,
+				15BD54522A9ED5960040D9E4 /* NumberFactService.swift */,
+			);
+			path = TCA;
+			sourceTree = "<group>";
+		};
 		15C6A4E22A9DD84600194811 /* Tour of TCA */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,10 +162,33 @@
 		15C6A4E32A9DD85300194811 /* 1-The basics  */ = {
 			isa = PBXGroup;
 			children = (
-				15C6A4E42A9DD87C00194811 /* BasicsView.swift */,
-				15BD54502A9ED0270040D9E4 /* CounterFeature.swift */,
+				15E26BFC2A9EDD0400348E83 /* MVVM */,
+				15BD54542A9EDB930040D9E4 /* TCA */,
 			);
 			path = "1-The basics ";
+			sourceTree = "<group>";
+		};
+		15E26BFC2A9EDD0400348E83 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				15E26BFE2A9EDD0F00348E83 /* My Style */,
+				15E26BFD2A9EDD0A00348E83 /* Apple Tutorial  */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		15E26BFD2A9EDD0A00348E83 /* Apple Tutorial  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Apple Tutorial ";
+			sourceTree = "<group>";
+		};
+		15E26BFE2A9EDD0F00348E83 /* My Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My Style";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +300,7 @@
 			files = (
 				1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */,
 				15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */,
+				15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */,
 				1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */,
 				1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */,
 				1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */,

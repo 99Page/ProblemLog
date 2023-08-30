@@ -89,4 +89,28 @@ final class TheBasicsTests: XCTestCase {
             $0.isTimerOn = false
         }
     }
+    
+    func test_getFactButtonTapped() async {
+        
+        
+        let store = TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        } withDependencies: {
+            // 모든 테스트마다 이런식으로 기능을 정의해줘야 하는건 코드의 중복이 생긴다.
+            // 테스트 하는 경우에는 protocol이 더 적합해 보인다.
+            $0.numberFact = NumberFactCliet { "count \($0)" }
+            //  ImmerdiateClock 사용하지 않으면 내부에서 계속 Clock이 동작하면서
+            //  Action이 실행된 상태가 된다.
+            $0.continuousClock = ImmediateClock()
+        }
+        
+        await store.send(.getFactButtonTapped) {
+            $0.isLoadingFact = true
+        }
+        
+        await store.receive(.factResponse("count 0")) {
+            $0.fact = "count 0"
+            $0.isLoadingFact = false
+        }
+    }
 }

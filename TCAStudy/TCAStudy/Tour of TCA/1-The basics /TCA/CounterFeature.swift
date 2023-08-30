@@ -44,6 +44,7 @@ struct CounterFeature: Reducer {
     //  테스트할 때 의존성을 설정해주지 않으면
     //  에러가 발생한다. 
     @Dependency(\.continuousClock) var clock
+    @Dependency(\.numberFact) var numberFactClient
     
     //  Reducer<State, Action>을 RecuerOf<Self>로 축약
     var body: some ReducerOf<Self> {
@@ -65,17 +66,13 @@ struct CounterFeature: Reducer {
                 state.isLoadingFact = true
                 return .run { [count = state.count] send in // 내부 state 값을 capture해야 read 가능
                     try await clock.sleep(for: .seconds(2))
-                    let url = URL(string: "http://www.numbersapi.com/\(count)")!
-                    let (data, _) = try await URLSession.shared.data(from: url)
-                    let fact = String(decoding: data, as: UTF8.self)
-                    print(fact)
                     
                     // 클로저 내부에서 불가능
                     // mutate를 하고 싶다면 관련된 다른 action을 실행해야함
                     // state.fact = fact
                     // 이를 처리하기 위해서 factResponse action 생성
                     // await을 이용해서 호출해야함
-                    await send(.factResponse(fact))
+                    try await send(.factResponse(numberFactClient.fetch(count)))
                 }
             case .toggleTimerButtonTapped:
                 state.isTimerOn.toggle()
