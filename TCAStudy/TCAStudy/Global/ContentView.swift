@@ -32,6 +32,16 @@ struct ContentView: View {
             NavigationLink("The basics MVVM version") {
                 MyBasicsView()
             }
+            
+            NavigationLink("Parent-child MVVM version") {
+                HeartView()
+            }
+            
+            NavigationLink("Parent-child TCA Version") {
+                HeartTCAView(store: Store(initialState: HeartReducer.State(), reducer: {
+                    HeartReducer()
+                }))
+            }
         }
     }
 }

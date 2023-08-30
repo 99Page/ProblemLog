@@ -21,6 +21,13 @@
 		1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0E92A95FE1700DCFD9A /* 2-OptionalState.swift */; };
 		1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0EB2A9600CE00DCFD9A /* 3-FocusState.swift */; };
 		1560C6672A9EC2650005708E /* TheBasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C6662A9EC2650005708E /* TheBasicsTests.swift */; };
+		15B2C9172A9F12FE00DA2059 /* LikeViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C9162A9F12FE00DA2059 /* LikeViewmodel.swift */; };
+		15B2C9192A9F13C200DA2059 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C9182A9F13C200DA2059 /* LikeButton.swift */; };
+		15B2C91B2A9F144A00DA2059 /* HeartViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C91A2A9F144A00DA2059 /* HeartViewmodel.swift */; };
+		15B2C91D2A9F157800DA2059 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C91C2A9F157800DA2059 /* HeartView.swift */; };
+		15B2C91F2A9F15EA00DA2059 /* LikeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C91E2A9F15EA00DA2059 /* LikeReducer.swift */; };
+		15B2C9212A9F163600DA2059 /* LikeTCAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C9202A9F163600DA2059 /* LikeTCAButton.swift */; };
+		15B2C9232A9F176000DA2059 /* HeartTCAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C9222A9F176000DA2059 /* HeartTCAView.swift */; };
 		15BD54512A9ED0270040D9E4 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BD54502A9ED0270040D9E4 /* CounterFeature.swift */; };
 		15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BD54522A9ED5960040D9E4 /* NumberFactService.swift */; };
 		15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6A4E42A9DD87C00194811 /* BasicsView.swift */; };
@@ -52,6 +59,13 @@
 		1554B0EB2A9600CE00DCFD9A /* 3-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-FocusState.swift"; sourceTree = "<group>"; };
 		1560C65C2A9EC2040005708E /* TCAStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1560C6662A9EC2650005708E /* TheBasicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsTests.swift; sourceTree = "<group>"; };
+		15B2C9162A9F12FE00DA2059 /* LikeViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewmodel.swift; sourceTree = "<group>"; };
+		15B2C9182A9F13C200DA2059 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		15B2C91A2A9F144A00DA2059 /* HeartViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartViewmodel.swift; sourceTree = "<group>"; };
+		15B2C91C2A9F157800DA2059 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		15B2C91E2A9F15EA00DA2059 /* LikeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeReducer.swift; sourceTree = "<group>"; };
+		15B2C9202A9F163600DA2059 /* LikeTCAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTCAButton.swift; sourceTree = "<group>"; };
+		15B2C9222A9F176000DA2059 /* HeartTCAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTCAView.swift; sourceTree = "<group>"; };
 		15BD54502A9ED0270040D9E4 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		15BD54522A9ED5960040D9E4 /* NumberFactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactService.swift; sourceTree = "<group>"; };
 		15C6A4E42A9DD87C00194811 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
@@ -111,6 +125,7 @@
 				1554B0E42A95F9E800DCFD9A /* Global */,
 				1554B0E22A95F9D400DCFD9A /* Cases */,
 				15C6A4E22A9DD84600194811 /* Tour of TCA */,
+				15B2C9122A9F11F300DA2059 /* Parent-Child */,
 				1554B0D52A95F87F00DCFD9A /* Assets.xcassets */,
 				1554B0D72A95F87F00DCFD9A /* Preview Content */,
 			);
@@ -158,6 +173,36 @@
 				1504B1DF2A9EE6B3006078B2 /* 1-The basics  */,
 			);
 			path = "Tour of TCA";
+			sourceTree = "<group>";
+		};
+		15B2C9122A9F11F300DA2059 /* Parent-Child */ = {
+			isa = PBXGroup;
+			children = (
+				15B2C9152A9F12E300DA2059 /* TCA */,
+				15B2C9142A9F12DC00DA2059 /* MVVM */,
+			);
+			path = "Parent-Child";
+			sourceTree = "<group>";
+		};
+		15B2C9142A9F12DC00DA2059 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				15B2C9162A9F12FE00DA2059 /* LikeViewmodel.swift */,
+				15B2C9182A9F13C200DA2059 /* LikeButton.swift */,
+				15B2C91A2A9F144A00DA2059 /* HeartViewmodel.swift */,
+				15B2C91C2A9F157800DA2059 /* HeartView.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		15B2C9152A9F12E300DA2059 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				15B2C91E2A9F15EA00DA2059 /* LikeReducer.swift */,
+				15B2C9202A9F163600DA2059 /* LikeTCAButton.swift */,
+				15B2C9222A9F176000DA2059 /* HeartTCAView.swift */,
+			);
+			path = TCA;
 			sourceTree = "<group>";
 		};
 		15BD54542A9EDB930040D9E4 /* TCA */ = {
@@ -307,15 +352,22 @@
 			files = (
 				1504B1DA2A9EDE68006078B2 /* MyCounterModel.swift in Sources */,
 				1504B1DC2A9EDEBF006078B2 /* MyCounterViewmodel.swift in Sources */,
+				15B2C91F2A9F15EA00DA2059 /* LikeReducer.swift in Sources */,
 				1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */,
 				1504B1DE2A9EDF84006078B2 /* MyNumberFactService .swift in Sources */,
 				15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */,
 				15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */,
+				15B2C9192A9F13C200DA2059 /* LikeButton.swift in Sources */,
 				1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */,
 				1504B1D82A9EDE5B006078B2 /* MyBasicsView.swift in Sources */,
+				15B2C91D2A9F157800DA2059 /* HeartView.swift in Sources */,
+				15B2C9212A9F163600DA2059 /* LikeTCAButton.swift in Sources */,
 				1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */,
 				1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */,
+				15B2C9172A9F12FE00DA2059 /* LikeViewmodel.swift in Sources */,
+				15B2C91B2A9F144A00DA2059 /* HeartViewmodel.swift in Sources */,
 				15BD54512A9ED0270040D9E4 /* CounterFeature.swift in Sources */,
+				15B2C9232A9F176000DA2059 /* HeartTCAView.swift in Sources */,
 				1554B0E82A95FBAA00DCFD9A /* 1-Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
