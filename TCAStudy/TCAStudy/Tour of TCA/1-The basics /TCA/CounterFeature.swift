@@ -26,6 +26,11 @@ struct CounterFeature: Reducer {
      UnitTest를 진행하기 위해서 Equatable 채택 필요
      send에는 필요없지만 receive에 필요하다
      */
+    
+    /*
+     timerTicking과 factResposne는 view에 노출될 필요가 없는 Action인데
+     구조상 노출되는 문제가 있다. 
+     */
     enum Action: Equatable {
         case decrementButtonTapped
         case incrementButtonTapped

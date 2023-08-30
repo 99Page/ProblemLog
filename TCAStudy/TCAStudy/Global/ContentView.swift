@@ -28,6 +28,10 @@ struct ContentView: View {
                     CounterFeature()
                 }) 
             }
+            
+            NavigationLink("The basics MVVM version") {
+                MyBasicsView()
+            }
         }
     }
 }
