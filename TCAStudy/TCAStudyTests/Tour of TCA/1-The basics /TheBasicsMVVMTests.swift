@@ -26,7 +26,6 @@ final class TheBasicsMVVMTests: XCTestCase {
         //  given
         let repeatCount: Int = .random(in: 1..<100)
         
-        //  API 기능이 필요없을 때도 주입 필요
         let viewmodel = MyCounterViewmodel(numberFactService: MyNumberFactStubService())
         
         //  when
@@ -81,6 +80,8 @@ final class TheBasicsMVVMTests: XCTestCase {
                 //  case 3, 4는 onGetFactButtonTapped에서 호출 하는 onFetchSuccess의 테스트인데
                 //  MVVM에서는 이를 분리하기가 어렵다.
                 //  기존에는 최종적인 결과만 테스트했기때문에 함수 하나하나에 따른 변화를 확인하지는 않았음.
+                    
+                //  값이 변하는 순서에 따라 매우 깨지기 쉬운 테스트.
                 case 3:
                     XCTAssertEqual(model.fact, expectedFact)
                 case 4:
