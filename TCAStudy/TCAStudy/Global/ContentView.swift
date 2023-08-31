@@ -11,36 +11,38 @@ import ComposableArchitecture
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            NavigationLink("Counter") {
-                CounterView(store: Store(initialState: Counter.State(), reducer: {
-                    Counter()
-                }))
-            }
-            
-            NavigationLink("OptionalState") {
-                OptionalBasicsView(store: Store(initialState: OptionalBasics.State(), reducer: {
-                    OptionalBasics()
-                }))
-            }
-            
-            NavigationLink("The basics") {
-                BasicsView(store: Store(initialState: CounterFeature.State()) {
-                    CounterFeature()
-                }) 
-            }
-            
-            NavigationLink("The basics MVVM version") {
-                MyBasicsView()
-            }
-            
-            NavigationLink("Parent-child MVVM version") {
-                HeartView()
-            }
-            
-            NavigationLink("Parent-child TCA Version") {
-                HeartTCAView(store: Store(initialState: HeartReducer.State(), reducer: {
-                    HeartReducer()
-                }))
+            List {
+                NavigationLink("Counter") {
+                    CounterView(store: Store(initialState: Counter.State(), reducer: {
+                        Counter()
+                    }))
+                }
+                
+                NavigationLink("OptionalState") {
+                    OptionalBasicsView(store: Store(initialState: OptionalBasics.State(), reducer: {
+                        OptionalBasics()
+                    }))
+                }
+                
+                NavigationLink("The basics") {
+                    BasicsView(store: Store(initialState: CounterFeature.State()) {
+                        CounterFeature()
+                    })
+                }
+                
+                NavigationLink("The basics MVVM version") {
+                    MyBasicsView()
+                }
+                
+                NavigationLink("Parent-child MVVM version") {
+                    HeartView()
+                }
+                
+                NavigationLink("Parent-child TCA Version") {
+                    HeartTCAView(store: Store(initialState: HeartReducer.State(), reducer: {
+                        HeartReducer()
+                    }))
+                }
             }
         }
     }

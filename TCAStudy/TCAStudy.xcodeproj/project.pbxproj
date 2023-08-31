@@ -12,6 +12,17 @@
 		1504B1DC2A9EDEBF006078B2 /* MyCounterViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1DB2A9EDEBF006078B2 /* MyCounterViewmodel.swift */; };
 		1504B1DE2A9EDF84006078B2 /* MyNumberFactService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1DD2A9EDF84006078B2 /* MyNumberFactService .swift */; };
 		1504B1E12A9EE6D1006078B2 /* TheBasicsMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */; };
+		152749922AA02EDA00FE8C1C /* Standup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749912AA02EDA00FE8C1C /* Standup.swift */; };
+		152749942AA02EEF00FE8C1C /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749932AA02EEF00FE8C1C /* Attendee.swift */; };
+		152749962AA02EF900FE8C1C /* Meeting .swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749952AA02EF900FE8C1C /* Meeting .swift */; };
+		152749982AA02F0300FE8C1C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749972AA02F0300FE8C1C /* Theme.swift */; };
+		1527499A2AA02F1B00FE8C1C /* StanupListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749992AA02F1B00FE8C1C /* StanupListFeature.swift */; };
+		1527499C2AA0308400FE8C1C /* StandupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527499B2AA0308400FE8C1C /* StandupListView.swift */; };
+		152749A02AA0332900FE8C1C /* StandupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527499F2AA0332900FE8C1C /* StandupView.swift */; };
+		152749A22AA0529900FE8C1C /* StandupFormFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749A12AA0529900FE8C1C /* StandupFormFeature.swift */; };
+		152749A42AA052AB00FE8C1C /* StandupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749A32AA052AB00FE8C1C /* StandupFormView.swift */; };
+		152749A62AA059A300FE8C1C /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749A52AA059A300FE8C1C /* ThemePicker.swift */; };
+		152749A92AA05D0100FE8C1C /* StandupFormsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152749A82AA05D0100FE8C1C /* StandupFormsTests.swift */; };
 		1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0D12A95F87F00DCFD9A /* TCAStudyApp.swift */; };
 		1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554B0D32A95F87F00DCFD9A /* ContentView.swift */; };
 		1554B0D62A95F87F00DCFD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1554B0D52A95F87F00DCFD9A /* Assets.xcassets */; };
@@ -49,6 +60,17 @@
 		1504B1DB2A9EDEBF006078B2 /* MyCounterViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCounterViewmodel.swift; sourceTree = "<group>"; };
 		1504B1DD2A9EDF84006078B2 /* MyNumberFactService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyNumberFactService .swift"; sourceTree = "<group>"; };
 		1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsMVVMTests.swift; sourceTree = "<group>"; };
+		152749912AA02EDA00FE8C1C /* Standup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standup.swift; sourceTree = "<group>"; };
+		152749932AA02EEF00FE8C1C /* Attendee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendee.swift; sourceTree = "<group>"; };
+		152749952AA02EF900FE8C1C /* Meeting .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meeting .swift"; sourceTree = "<group>"; };
+		152749972AA02F0300FE8C1C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		152749992AA02F1B00FE8C1C /* StanupListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanupListFeature.swift; sourceTree = "<group>"; };
+		1527499B2AA0308400FE8C1C /* StandupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupListView.swift; sourceTree = "<group>"; };
+		1527499F2AA0332900FE8C1C /* StandupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupView.swift; sourceTree = "<group>"; };
+		152749A12AA0529900FE8C1C /* StandupFormFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormFeature.swift; sourceTree = "<group>"; };
+		152749A32AA052AB00FE8C1C /* StandupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormView.swift; sourceTree = "<group>"; };
+		152749A52AA059A300FE8C1C /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		152749A82AA05D0100FE8C1C /* StandupFormsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormsTests.swift; sourceTree = "<group>"; };
 		1554B0CE2A95F87F00DCFD9A /* TCAStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1554B0D12A95F87F00DCFD9A /* TCAStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAStudyApp.swift; sourceTree = "<group>"; };
 		1554B0D32A95F87F00DCFD9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +120,55 @@
 				1504B1E02A9EE6D1006078B2 /* TheBasicsMVVMTests.swift */,
 			);
 			path = "1-The basics ";
+			sourceTree = "<group>";
+		};
+		1527498C2AA0281B00FE8C1C /* 2-Introducing standups */ = {
+			isa = PBXGroup;
+			children = (
+				152749902AA02ED200FE8C1C /* View */,
+				1527498F2AA02ECE00FE8C1C /* Feature */,
+				1527498E2AA02ECB00FE8C1C /* Model */,
+			);
+			path = "2-Introducing standups";
+			sourceTree = "<group>";
+		};
+		1527498E2AA02ECB00FE8C1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				152749912AA02EDA00FE8C1C /* Standup.swift */,
+				152749932AA02EEF00FE8C1C /* Attendee.swift */,
+				152749952AA02EF900FE8C1C /* Meeting .swift */,
+				152749972AA02F0300FE8C1C /* Theme.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1527498F2AA02ECE00FE8C1C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				152749992AA02F1B00FE8C1C /* StanupListFeature.swift */,
+				152749A12AA0529900FE8C1C /* StandupFormFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		152749902AA02ED200FE8C1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1527499B2AA0308400FE8C1C /* StandupListView.swift */,
+				1527499F2AA0332900FE8C1C /* StandupView.swift */,
+				152749A32AA052AB00FE8C1C /* StandupFormView.swift */,
+				152749A52AA059A300FE8C1C /* ThemePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		152749A72AA05B4900FE8C1C /* 2-Introducing standups  */ = {
+			isa = PBXGroup;
+			children = (
+				152749A82AA05D0100FE8C1C /* StandupFormsTests.swift */,
+			);
+			path = "2-Introducing standups ";
 			sourceTree = "<group>";
 		};
 		1554B0C52A95F87E00DCFD9A = {
@@ -170,6 +241,7 @@
 		1560C6652A9EC2070005708E /* Tour of TCA */ = {
 			isa = PBXGroup;
 			children = (
+				152749A72AA05B4900FE8C1C /* 2-Introducing standups  */,
 				1504B1DF2A9EE6B3006078B2 /* 1-The basics  */,
 			);
 			path = "Tour of TCA";
@@ -219,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				15C6A4E32A9DD85300194811 /* 1-The basics  */,
+				1527498C2AA0281B00FE8C1C /* 2-Introducing standups */,
 			);
 			path = "Tour of TCA";
 			sourceTree = "<group>";
@@ -352,8 +425,14 @@
 			files = (
 				1504B1DA2A9EDE68006078B2 /* MyCounterModel.swift in Sources */,
 				1504B1DC2A9EDEBF006078B2 /* MyCounterViewmodel.swift in Sources */,
+				152749962AA02EF900FE8C1C /* Meeting .swift in Sources */,
+				152749982AA02F0300FE8C1C /* Theme.swift in Sources */,
 				15B2C91F2A9F15EA00DA2059 /* LikeReducer.swift in Sources */,
+				152749A62AA059A300FE8C1C /* ThemePicker.swift in Sources */,
+				1527499A2AA02F1B00FE8C1C /* StanupListFeature.swift in Sources */,
+				152749922AA02EDA00FE8C1C /* Standup.swift in Sources */,
 				1554B0D42A95F87F00DCFD9A /* ContentView.swift in Sources */,
+				152749A02AA0332900FE8C1C /* StandupView.swift in Sources */,
 				1504B1DE2A9EDF84006078B2 /* MyNumberFactService .swift in Sources */,
 				15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */,
 				15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */,
@@ -361,13 +440,17 @@
 				1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */,
 				1504B1D82A9EDE5B006078B2 /* MyBasicsView.swift in Sources */,
 				15B2C91D2A9F157800DA2059 /* HeartView.swift in Sources */,
+				152749942AA02EEF00FE8C1C /* Attendee.swift in Sources */,
+				1527499C2AA0308400FE8C1C /* StandupListView.swift in Sources */,
 				15B2C9212A9F163600DA2059 /* LikeTCAButton.swift in Sources */,
 				1554B0EA2A95FE1700DCFD9A /* 2-OptionalState.swift in Sources */,
 				1554B0D22A95F87F00DCFD9A /* TCAStudyApp.swift in Sources */,
 				15B2C9172A9F12FE00DA2059 /* LikeViewmodel.swift in Sources */,
 				15B2C91B2A9F144A00DA2059 /* HeartViewmodel.swift in Sources */,
 				15BD54512A9ED0270040D9E4 /* CounterFeature.swift in Sources */,
+				152749A22AA0529900FE8C1C /* StandupFormFeature.swift in Sources */,
 				15B2C9232A9F176000DA2059 /* HeartTCAView.swift in Sources */,
+				152749A42AA052AB00FE8C1C /* StandupFormView.swift in Sources */,
 				1554B0E82A95FBAA00DCFD9A /* 1-Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152749A92AA05D0100FE8C1C /* StandupFormsTests.swift in Sources */,
 				1504B1E12A9EE6D1006078B2 /* TheBasicsMVVMTests.swift in Sources */,
 				1560C6672A9EC2650005708E /* TheBasicsTests.swift in Sources */,
 			);
@@ -449,6 +533,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -502,6 +587,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
