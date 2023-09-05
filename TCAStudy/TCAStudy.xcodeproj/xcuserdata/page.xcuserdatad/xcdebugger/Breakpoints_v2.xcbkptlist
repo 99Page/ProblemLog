@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "326A98ED-08FA-4CE6-9C49-B13EDAF4A990"
-   type = "0"
+   uuid = "C6E4D6D4-2106-4C48-81B8-A56F90B4227D"
+   type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EF3506CE-7FC5-4435-96F3-80C2DF0F09DB"
+            uuid = "60D16E41-CAB9-44EC-9145-3A51E8E23EAD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../DynamicLibrary/DynamicLibrary/DynamicLibrary.swift"
+            filePath = "TCAStudyTests/Tour of TCA/1-The basics /TheBasicsMVVMTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "DynamicLibrary"
-            landmarkType = "3">
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "test_GetFactButtonTapped()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

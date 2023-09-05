@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MoyaStudy/MoyaStudy.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../EagerLinkingStudy/EagerLinkingStudy.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TCAStudy/TCAStudy.xcodeproj">
    </FileRef>
    <FileRef
