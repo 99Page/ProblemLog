@@ -29,6 +29,9 @@ struct ContentView: View {
             }
             .buttonStyle(.bordered)
         }
+        .task {
+            await viewmodel.testAPI()
+        }
     }
 }
 

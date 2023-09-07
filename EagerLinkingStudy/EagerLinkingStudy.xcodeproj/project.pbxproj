@@ -11,41 +11,10 @@
 		1589EE3E2AA5CEE200B248D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1589EE3D2AA5CEE200B248D4 /* ContentView.swift */; };
 		1589EE402AA5CEE300B248D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1589EE3F2AA5CEE300B248D4 /* Assets.xcassets */; };
 		1589EE432AA5CEE300B248D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1589EE422AA5CEE300B248D4 /* Preview Assets.xcassets */; };
-		1589EE642AA5D08900B248D4 /* libDynamicLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1589EE612AA5CF1700B248D4 /* libDynamicLibrary.a */; };
-		1589EEA52AA5D5A000B248D4 /* libDynanicLibrary3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1589EEA42AA5D55100B248D4 /* libDynanicLibrary3.a */; };
-		15BFB1762AA5DE6E00CD756A /* libDynamicLibrary4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BFB1702AA5DE1F00CD756A /* libDynamicLibrary4.a */; };
+		15CCDF562AA7229300A95F65 /* libDynamicLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CCDF552AA7229300A95F65 /* libDynamicLibrary.a */; };
+		15CCDF582AA7229F00A95F65 /* libDynanicLibrary3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CCDF572AA7229F00A95F65 /* libDynanicLibrary3.a */; };
+		15CCDF5A2AA722A300A95F65 /* libDynamicLibrary4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CCDF592AA722A300A95F65 /* libDynamicLibrary4.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1589EE602AA5CF1700B248D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1589EE5C2AA5CF1600B248D4 /* DynamicLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1589EE522AA5CF1600B248D4;
-			remoteInfo = DynamicLibrary;
-		};
-		1589EE7C2AA5D31900B248D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1589EE782AA5D31800B248D4 /* DynanicLibrary2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1589EE6E2AA5D31800B248D4;
-			remoteInfo = DynanicLibrary2;
-		};
-		1589EEA32AA5D55100B248D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1589EE9F2AA5D55100B248D4 /* DynanicLibrary3.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1589EE952AA5D55100B248D4;
-			remoteInfo = DynanicLibrary3;
-		};
-		15BFB16F2AA5DE1F00CD756A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15BFB16A2AA5DE1F00CD756A /* DynamicLibrary4.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 15BFB1602AA5DE1F00CD756A;
-			remoteInfo = DynamicLibrary4;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1589EE382AA5CEE200B248D4 /* EagerLinkingStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagerLinkingStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,10 +22,9 @@
 		1589EE3D2AA5CEE200B248D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1589EE3F2AA5CEE300B248D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1589EE422AA5CEE300B248D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1589EE5C2AA5CF1600B248D4 /* DynamicLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DynamicLibrary.xcodeproj; path = ../DynamicLibrary/DynamicLibrary.xcodeproj; sourceTree = "<group>"; };
-		1589EE782AA5D31800B248D4 /* DynanicLibrary2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DynanicLibrary2.xcodeproj; path = ../DynanicLibrary2/DynanicLibrary2.xcodeproj; sourceTree = "<group>"; };
-		1589EE9F2AA5D55100B248D4 /* DynanicLibrary3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DynanicLibrary3.xcodeproj; path = ../DynanicLibrary3/DynanicLibrary3.xcodeproj; sourceTree = "<group>"; };
-		15BFB16A2AA5DE1F00CD756A /* DynamicLibrary4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DynamicLibrary4.xcodeproj; path = ../DynamicLibrary4/DynamicLibrary4.xcodeproj; sourceTree = "<group>"; };
+		15CCDF552AA7229300A95F65 /* libDynamicLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDynamicLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CCDF572AA7229F00A95F65 /* libDynanicLibrary3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDynanicLibrary3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CCDF592AA722A300A95F65 /* libDynamicLibrary4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDynamicLibrary4.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1589EEA52AA5D5A000B248D4 /* libDynanicLibrary3.a in Frameworks */,
-				1589EE642AA5D08900B248D4 /* libDynamicLibrary.a in Frameworks */,
-				15BFB1762AA5DE6E00CD756A /* libDynamicLibrary4.a in Frameworks */,
+				15CCDF582AA7229F00A95F65 /* libDynanicLibrary3.a in Frameworks */,
+				15CCDF562AA7229300A95F65 /* libDynamicLibrary.a in Frameworks */,
+				15CCDF5A2AA722A300A95F65 /* libDynamicLibrary4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +44,6 @@
 		1589EE2F2AA5CEE200B248D4 = {
 			isa = PBXGroup;
 			children = (
-				15BFB16A2AA5DE1F00CD756A /* DynamicLibrary4.xcodeproj */,
-				1589EE9F2AA5D55100B248D4 /* DynanicLibrary3.xcodeproj */,
-				1589EE782AA5D31800B248D4 /* DynanicLibrary2.xcodeproj */,
-				1589EE5C2AA5CF1600B248D4 /* DynamicLibrary.xcodeproj */,
 				1589EE3A2AA5CEE200B248D4 /* EagerLinkingStudy */,
 				1589EE392AA5CEE200B248D4 /* Products */,
 				1589EE622AA5D07800B248D4 /* Frameworks */,
@@ -113,43 +77,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1589EE5D2AA5CF1600B248D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1589EE612AA5CF1700B248D4 /* libDynamicLibrary.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1589EE622AA5D07800B248D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15CCDF592AA722A300A95F65 /* libDynamicLibrary4.a */,
+				15CCDF572AA7229F00A95F65 /* libDynanicLibrary3.a */,
+				15CCDF552AA7229300A95F65 /* libDynamicLibrary.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1589EE792AA5D31800B248D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1589EE7D2AA5D31900B248D4 /* libDynanicLibrary2.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1589EEA02AA5D55100B248D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1589EEA42AA5D55100B248D4 /* libDynanicLibrary3.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		15BFB16B2AA5DE1F00CD756A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				15BFB1702AA5DE1F00CD756A /* libDynamicLibrary4.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,61 +133,12 @@
 			mainGroup = 1589EE2F2AA5CEE200B248D4;
 			productRefGroup = 1589EE392AA5CEE200B248D4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1589EE5D2AA5CF1600B248D4 /* Products */;
-					ProjectRef = 1589EE5C2AA5CF1600B248D4 /* DynamicLibrary.xcodeproj */;
-				},
-				{
-					ProductGroup = 15BFB16B2AA5DE1F00CD756A /* Products */;
-					ProjectRef = 15BFB16A2AA5DE1F00CD756A /* DynamicLibrary4.xcodeproj */;
-				},
-				{
-					ProductGroup = 1589EE792AA5D31800B248D4 /* Products */;
-					ProjectRef = 1589EE782AA5D31800B248D4 /* DynanicLibrary2.xcodeproj */;
-				},
-				{
-					ProductGroup = 1589EEA02AA5D55100B248D4 /* Products */;
-					ProjectRef = 1589EE9F2AA5D55100B248D4 /* DynanicLibrary3.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1589EE372AA5CEE200B248D4 /* EagerLinkingStudy */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1589EE612AA5CF1700B248D4 /* libDynamicLibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libDynamicLibrary.a;
-			remoteRef = 1589EE602AA5CF1700B248D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1589EE7D2AA5D31900B248D4 /* libDynanicLibrary2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libDynanicLibrary2.a;
-			remoteRef = 1589EE7C2AA5D31900B248D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1589EEA42AA5D55100B248D4 /* libDynanicLibrary3.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libDynanicLibrary3.a;
-			remoteRef = 1589EEA32AA5D55100B248D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		15BFB1702AA5DE1F00CD756A /* libDynamicLibrary4.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libDynamicLibrary4.a;
-			remoteRef = 15BFB16F2AA5DE1F00CD756A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1589EE362AA5CEE200B248D4 /* Resources */ = {

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "EagerLinking">
+      <FileRef
+         location = "group:EagerLinkingStudy/DynamicLibrary4/DynamicLibrary4.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:EagerLinkingStudy/DynanicLibrary3/DynanicLibrary3.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:EagerLinkingStudy/DynanicLibrary2/DynanicLibrary2.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:EagerLinkingStudy/DynamicLibrary/DynamicLibrary.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:EagerLinkingStudy/EagerLinkingStudy.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:MoyaStudy/MoyaStudy.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../EagerLinkingStudy/EagerLinkingStudy.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TCAStudy/TCAStudy.xcodeproj">

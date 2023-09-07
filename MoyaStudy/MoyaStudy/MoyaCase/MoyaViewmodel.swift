@@ -9,6 +9,7 @@ import SwiftUI
 import CombineMoya
 import Moya
 import Combine
+import Alamofire
 
 final class MoyaViewmodel: ObservableObject {
     
@@ -39,5 +40,20 @@ final class MoyaViewmodel: ObservableObject {
                 debugPrint("receivedValue: \(title)")
             })
             .store(in: &cancellable)
+    }
+    
+    func testAPI() async {
+        let url = "https://172.30.1.12/api/access/authentication/token/application"
+                
+        let response = await AF.request(url, method: .post)
+            .serializingDecodable(String.self)
+            .response
+        
+        switch response.result {
+        case .success(let success):
+            debugPrint(success)
+        case .failure(let err):
+            debugPrint(err)
+        }
     }
 }
