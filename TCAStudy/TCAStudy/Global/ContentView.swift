@@ -43,6 +43,12 @@ struct ContentView: View {
                         HeartReducer()
                     }))
                 }
+                
+                NavigationLink("Stand up list") {
+                    StandupListView(store: Store(initialState: StandupListFeature.State(standups: [.mock()]), reducer: {
+                        StandupListFeature()
+                    }))
+                }
             }
         }
     }

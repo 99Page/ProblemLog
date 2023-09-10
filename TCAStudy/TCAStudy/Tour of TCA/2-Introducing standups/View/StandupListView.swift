@@ -31,6 +31,34 @@ struct StandupListView: View {
                     }
                 }
             }
+            .sheet(
+                store: store.scope(
+                    state: \.$addStandup,
+                    action: { childAction in
+                            .addStandup(childAction)
+                    })) { store in
+                        NavigationStack {
+                            StandupFormView(store: store)
+                                .navigationTitle("Standup Form")
+                                .toolbar {
+                                    ToolbarItem(placement: .navigationBarLeading) {
+                                        Button {
+                                            viewStore.send(.saveStandupButtonTapped)
+                                        } label: {
+                                            Text("add")
+                                        }
+                                    }
+                                    
+                                    ToolbarItem(placement: .navigationBarTrailing) {
+                                        Button {
+                                            viewStore.send(.cancelStandupButtonTapped)
+                                        } label: {
+                                            Text("cancel")
+                                        }
+                                    }
+                                }
+                        }
+                    }
         }
     }
 }

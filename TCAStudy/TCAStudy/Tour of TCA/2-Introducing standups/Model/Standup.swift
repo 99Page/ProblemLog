@@ -9,15 +9,15 @@ import Foundation
 
 struct Standup: Equatable, Identifiable, Codable {
     var id: String = UUID().uuidString
-  var attendees: [Attendee] = []
-  var duration = Duration.seconds(60 * 5)
-  var meetings: [Meeting] = []
-  var theme: Theme
+    var attendees: [Attendee] = []
+    var duration = Duration.seconds(60 * 5)
+    var meetings: [Meeting] = []
+    var theme: Theme
     var title: String
-
-  var durationPerAttendee: Duration {
-    self.duration / self.attendees.count
-  }
+    
+    var durationPerAttendee: Duration {
+        self.duration / self.attendees.count
+    }
 }
 
 extension Standup {

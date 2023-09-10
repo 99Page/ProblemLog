@@ -171,13 +171,6 @@
 			path = "2-Introducing standups ";
 			sourceTree = "<group>";
 		};
-		152749AA2AA05F7B00FE8C1C /* 3-Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3-Navigation";
-			sourceTree = "<group>";
-		};
 		1554B0C52A95F87E00DCFD9A = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +292,6 @@
 			children = (
 				15C6A4E32A9DD85300194811 /* 1-The basics  */,
 				1527498C2AA0281B00FE8C1C /* 2-Introducing standups */,
-				152749AA2AA05F7B00FE8C1C /* 3-Navigation */,
 			);
 			path = "Tour of TCA";
 			sourceTree = "<group>";
