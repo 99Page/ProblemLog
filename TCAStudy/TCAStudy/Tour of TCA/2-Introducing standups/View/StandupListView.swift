@@ -36,7 +36,7 @@ struct StandupListView: View {
                     state: \.$addStandup,
                     action: { childAction in
                             .addStandup(childAction)
-                    })) { store in
+                    })) { store in 
                         NavigationStack {
                             StandupFormView(store: store)
                                 .navigationTitle("Standup Form")
