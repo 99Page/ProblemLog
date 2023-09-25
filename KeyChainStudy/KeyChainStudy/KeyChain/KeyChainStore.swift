@@ -72,7 +72,6 @@ struct KeyChainStore {
         guard status != errSecItemNotFound else { throw KeychainError.noPassword }
         guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }
         
-        debugPrint("item: \(item)")
         guard let existringItem = item as? [String: Any],
               let passwordData = existringItem[kSecValueData as String] as? Data,
               let password = String(data: passwordData, encoding: String.Encoding.utf8),
@@ -84,6 +83,10 @@ struct KeyChainStore {
         return Credentials(username: account, password: password)
     }
     
+    /*
+     같은 Server, 같은 Account로 저장된 정보가 이미 있는 경우 SecItemAdd를 호출하면 에러가 발생한다.
+     이런 경우에 Update 혹은 Delete가 필요하다
+     */
     func readPasswordOf(_ name: String) throws -> String {
         let query: [String: Any] = [
             kSecClass as String: kSecClassInternetPassword,
@@ -107,20 +110,29 @@ struct KeyChainStore {
         return password
     }
     
+    // 업데이트는 암시적으로 Read를 수행한다. 
     func update(_ credentials: Credentials) throws {
+        
+        /*
+         필요한 정보를 찾기 위한 기본적인 쿼리다.
+         */
         let query: [String: Any] = [
             kSecClass as String: kSecClassInternetPassword,
-            kSecAttrServer as String: Self.server
+            kSecAttrServer as String: Self.server,
+            kSecAttrAccount as String: credentials.username
         ]
         
-        let account = credentials.username
         let password = credentials.password.data(using: String.Encoding.utf8)!
         
+        /*
+         쿼리에 해당하는 범위에서
+         바꾸고 싶은 정보를 설정한다.
+         */
         let attributes: [String: Any] = [
-            kSecAttrAccount as String: account,
             kSecValueData as String: password
         ]
         
+        // query 결과 반환된 곳의 정보를 attribute로 변환한다. 
         let status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)
         guard status != errSecItemNotFound else { throw KeychainError.noPassword }
         guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status)}

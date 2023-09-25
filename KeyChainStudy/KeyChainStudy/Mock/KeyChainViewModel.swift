@@ -40,6 +40,15 @@ final class KeyChainViewModel: ObservableObject {
         }
     }
     
+    func onChangePasswordButtonTapped() {
+        do {
+            try store.update(.init(username: model.name, password: model.password))
+            debugPrint("update success")
+        } catch {
+            debugPrint("update error: \(error.localizedDescription)")
+        }
+    }
+    
     var nameTextBinding: Binding<String> {
         .init {
             self.model.name

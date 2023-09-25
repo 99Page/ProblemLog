@@ -33,6 +33,12 @@ struct KeyChainView: View {
             } label: {
                 Text("Read user password")
             }
+            
+            Button {
+                viewModel.onChangePasswordButtonTapped()
+            } label: {
+                Text("Change password")
+            }
 
         }
     }
