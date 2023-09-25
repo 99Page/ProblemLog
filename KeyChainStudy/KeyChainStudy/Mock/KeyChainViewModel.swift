@@ -14,11 +14,15 @@ final class KeyChainViewModel: ObservableObject {
     private let store = KeyChainStore.shared
     
     func onAddButtonTapped() {
-        do {
-            try store.add(.init(username: model.name, password: model.password))
-            debugPrint("add success")
-        } catch {
-            debugPrint("add error: \(error.localizedDescription)")
+        
+        // main thread에서 실행하면 warning창이 표시된다
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try self.store.add(.init(username: self.model.name, password: self.model.password))
+                debugPrint("add success")
+            } catch {
+                debugPrint("add error: \(error.localizedDescription)")
+            }
         }
     }
     
@@ -50,11 +54,14 @@ final class KeyChainViewModel: ObservableObject {
     }
     
     func onDeleteAnyOneButtonTapped() {
-        do {
-            try store.delete()
-            debugPrint("Delete success")
-        } catch {
-            debugPrint("delete error: \(error.localizedDescription)")
+        // main thread에서 실행하면 warning창이 표시된다
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try self.store.delete()
+                debugPrint("Delete success")
+            } catch {
+                debugPrint("delete error: \(error.localizedDescription)")
+            }
         }
     }
     
