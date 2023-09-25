@@ -21,6 +21,18 @@ struct KeyChainView: View {
             } label: {
                 Text("Add")
             }
+            
+            Button {
+                viewModel.onReadOneButtonTapped()
+            } label: {
+                Text("Read any one")
+            }
+
+            Button {
+                viewModel.onReadThisButotnTapped()
+            } label: {
+                Text("Read user password")
+            }
 
         }
     }

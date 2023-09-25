@@ -22,6 +22,24 @@ final class KeyChainViewModel: ObservableObject {
         }
     }
     
+    func onReadOneButtonTapped() {
+        do {
+            let result = try store.read()
+            debugPrint("read success: \(result)")
+        } catch {
+            debugPrint("read error: \(error.localizedDescription)")
+        }
+    }
+    
+    func onReadThisButotnTapped() {
+        do {
+            let result = try store.readPasswordOf(model.name)
+            debugPrint("read this success: \(result)")
+        } catch {
+            debugPrint("read this error: \(error.localizedDescription)")
+        }
+    }
+    
     var nameTextBinding: Binding<String> {
         .init {
             self.model.name
