@@ -42,10 +42,19 @@ final class KeyChainViewModel: ObservableObject {
     
     func onChangePasswordButtonTapped() {
         do {
-            try store.update(.init(username: model.name, password: model.password))
+            try store.updatePasswordOf(.init(username: model.name, password: model.password))
             debugPrint("update success")
         } catch {
             debugPrint("update error: \(error.localizedDescription)")
+        }
+    }
+    
+    func onDeleteAnyOneButtonTapped() {
+        do {
+            try store.delete()
+            debugPrint("Delete success")
+        } catch {
+            debugPrint("delete error: \(error.localizedDescription)")
         }
     }
     

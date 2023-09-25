@@ -111,7 +111,7 @@ struct KeyChainStore {
     }
     
     // 업데이트는 암시적으로 Read를 수행한다. 
-    func update(_ credentials: Credentials) throws {
+    func updatePasswordOf(_ credentials: Credentials) throws {
         
         /*
          필요한 정보를 찾기 위한 기본적인 쿼리다.
@@ -132,21 +132,29 @@ struct KeyChainStore {
             kSecValueData as String: password
         ]
         
-        // query 결과 반환된 곳의 정보를 attribute로 변환한다. 
+        // query 결과 반환된 곳의 정보를 attribute로 변환한다.
         let status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)
         guard status != errSecItemNotFound else { throw KeychainError.noPassword }
         guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status)}
     }
     
-    
-    func delete(_ credentials: Credentials) throws {
+    // Account를 지정하지 않았기때문에 server 기준으로 처음 저장된 정보가 삭제된다.
+    func delete() throws {
         let query: [String: Any] = [
             kSecClass as String: kSecClassInternetPassword,
             kSecAttrServer as String: Self.server
         ]
         
-        let account = credentials.username
-        let password = credentials.password.data(using: String.Encoding.utf8)!
+        let status = SecItemDelete(query as CFDictionary)
+        guard status == errSecSuccess || status == errSecItemNotFound else { throw KeychainError.unhandledError(status: status) }
+    }
+    
+    func deleteOf(name: String) throws {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassInternetPassword,
+            kSecAttrServer as String: Self.server,
+            kSecAttrAccount as String: name
+        ]
         
         let status = SecItemDelete(query as CFDictionary)
         guard status == errSecSuccess || status == errSecItemNotFound else { throw KeychainError.unhandledError(status: status) }

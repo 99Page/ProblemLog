@@ -39,6 +39,13 @@ struct KeyChainView: View {
             } label: {
                 Text("Change password")
             }
+            
+            Button {
+                viewModel.onDeleteAnyOneButtonTapped()
+            } label: {
+                Text("Delete any one ")
+            }
+
 
         }
     }
