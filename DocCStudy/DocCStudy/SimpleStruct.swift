@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+/**
+ Simple struct
+ 
+ overview를 작성하는중 
+ */
 struct SimpleStruct {
     
     /**
