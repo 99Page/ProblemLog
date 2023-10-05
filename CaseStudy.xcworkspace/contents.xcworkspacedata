@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Fecit/Projects/FecitViewPackage/Sources/Global/FocusStateStudy/FocusStateStudy.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DocCStudy/DocCStudy.xcodeproj">
    </FileRef>
    <FileRef
