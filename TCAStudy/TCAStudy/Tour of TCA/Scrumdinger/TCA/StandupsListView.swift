@@ -12,7 +12,7 @@ struct StandupsListFeature: Reducer {
     
     // MVVM에서 @Published를 사용하는 부분이 State와 매칭된다.
     // 나는 @Published를 한개만 선언하는데 이곳에서는 여러개를 선언한다는 차이점이 있다
-    struct State {
+    struct State: Equatable {
         @PresentationState var addStandup: StandupFormFeature.State?
         var standups: IdentifiedArrayOf<Standup> = []
     }

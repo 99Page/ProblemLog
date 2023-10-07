@@ -25,8 +25,10 @@ struct StandupFormFeature: Reducer {
             self.focus = focus
             self.standup = standup
             
+            @Dependency(\.uuid) var uuid
+            
             if self.standup.attendees.isEmpty {
-                self.standup.attendees.append(Attendee(id: Attendee.ID()))
+                self.standup.attendees.append(Attendee(id: uuid()))
             }
         }
         

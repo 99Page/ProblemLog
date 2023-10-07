@@ -39,6 +39,9 @@
 		15DA93ED2AB5435000543307 /* StandupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA93EC2AB5435000543307 /* StandupsListView.swift */; };
 		15DA93F12AB5452A00543307 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA93F02AB5452A00543307 /* CardView.swift */; };
 		15DA93F42AB548A300543307 /* StandupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA93F32AB548A200543307 /* StandupFormView.swift */; };
+		15FB94E82AD12321001A18C9 /* StandupListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB94E72AD12321001A18C9 /* StandupListTests.swift */; };
+		15FB94EA2AD1284F001A18C9 /* StandupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB94E92AD1284F001A18C9 /* StandupDetailView.swift */; };
+		15FB94EC2AD13212001A18C9 /* StandupDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB94EB2AD13212001A18C9 /* StandupDetailTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		15DA93EC2AB5435000543307 /* StandupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListView.swift; sourceTree = "<group>"; };
 		15DA93F02AB5452A00543307 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		15DA93F32AB548A200543307 /* StandupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormView.swift; sourceTree = "<group>"; };
+		15FB94E72AD12321001A18C9 /* StandupListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupListTests.swift; sourceTree = "<group>"; };
+		15FB94E92AD1284F001A18C9 /* StandupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailView.swift; sourceTree = "<group>"; };
+		15FB94EB2AD13212001A18C9 /* StandupDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				15B1195B2AB5846600A4D391 /* StandupFormTests.swift */,
+				15FB94E72AD12321001A18C9 /* StandupListTests.swift */,
+				15FB94EB2AD13212001A18C9 /* StandupDetailTests.swift */,
 			);
 			path = Scrumdiner;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 				15DA93EC2AB5435000543307 /* StandupsListView.swift */,
 				15DA93F02AB5452A00543307 /* CardView.swift */,
 				15DA93F32AB548A200543307 /* StandupFormView.swift */,
+				15FB94E92AD1284F001A18C9 /* StandupDetailView.swift */,
 			);
 			path = TCA;
 			sourceTree = "<group>";
@@ -426,6 +435,7 @@
 				15C6A4E52A9DD87C00194811 /* BasicsView.swift in Sources */,
 				15C6012C2AB53E77002188BD /* ThemeView.swift in Sources */,
 				15BD54532A9ED5960040D9E4 /* NumberFactService.swift in Sources */,
+				15FB94EA2AD1284F001A18C9 /* StandupDetailView.swift in Sources */,
 				15DA93EA2AB5419300543307 /* Standup.swift in Sources */,
 				1554B0EC2A9600CE00DCFD9A /* 3-FocusState.swift in Sources */,
 				15DA93F42AB548A300543307 /* StandupFormView.swift in Sources */,
@@ -451,7 +461,9 @@
 			files = (
 				1504B1E12A9EE6D1006078B2 /* TheBasicsMVVMTests.swift in Sources */,
 				15B1195C2AB5846600A4D391 /* StandupFormTests.swift in Sources */,
+				15FB94EC2AD13212001A18C9 /* StandupDetailTests.swift in Sources */,
 				1560C6672A9EC2650005708E /* TheBasicsTests.swift in Sources */,
+				15FB94E82AD12321001A18C9 /* StandupListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
