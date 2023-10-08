@@ -17,7 +17,7 @@ struct StandupsListFeature: Reducer {
         var standups: IdentifiedArrayOf<Standup> = []
     }
     
-    enum Action {
+    enum Action: Equatable {
         case addButtonTapped
         
         // 하위로 전달한 Action의 동작이 실행된 후 나중에 실행된다.
@@ -71,8 +71,12 @@ struct StandupsListView: View {
         WithViewStore(store, observe: \.standups) { viewStore in
             List {
                 ForEach(viewStore.state) { standup in
-                    CardView(standup: standup)
-                        .listRowBackground(standup.theme.mainColor)
+                    NavigationLink(
+                        state: AppFeature.Path.State.detail(StandupDetailFeature.State(standup: standup))
+                    ) {
+                        CardView(standup: standup)
+                            .listRowBackground(standup.theme.mainColor)
+                    }
                 }
             }
             .navigationTitle("Standups")

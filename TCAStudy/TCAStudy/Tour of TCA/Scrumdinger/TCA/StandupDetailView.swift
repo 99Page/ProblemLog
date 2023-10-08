@@ -10,26 +10,54 @@ import SwiftUI
 
 struct StandupDetailFeature: Reducer {
     struct State: Equatable {
+        @PresentationState var alert: AlertState<Action.Alert>?
         @PresentationState var editStandup: StandupFormFeature.State?
         var standup: Standup
     }
     
-    enum Action {
+    enum Action: Equatable {
+        case alert(PresentationAction<Alert>)
         case cancelEditStandupButtonTapped
+        case delegate(Delegate)
         case deleteButtonTapped
         case deleteMeetings(atOffset: IndexSet)
         case editButtonTapped
         case editStandup(PresentationAction<StandupFormFeature.Action>)
         case saveStandupButtonTapped
+        
+        enum Alert {
+            case confirmDeletion
+        }
+        
+        enum Delegate: Equatable {
+            case standupUpdate(Standup)
+        }
     }
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
+            case .alert(.presented(.confirmDeletion)):
+                // delete this standup
+                return .none
+            case .alert(.dismiss):
+                return .none
             case .cancelEditStandupButtonTapped:
                 state.editStandup = nil
                 return .none
+            case .delegate:
+                return .none
             case .deleteButtonTapped:
+                state.alert = AlertState {
+                    TextState("Are you sure you want to delete?")
+                } actions: {
+                    ButtonState(
+                        role: .destructive,
+                        action: .confirmDeletion
+                    ) {
+                        TextState("Delete")
+                    }
+                }
                 return .none
             case .deleteMeetings(atOffset: let atOffset):
                 state.standup.meetings.remove(atOffsets: atOffset)
@@ -49,8 +77,14 @@ struct StandupDetailFeature: Reducer {
                 return .none
             }
         }
+        .ifLet(\.$alert, action: /Action.alert)
         .ifLet(\.$editStandup, action: /Action.editStandup) {
             StandupFormFeature()
+        }
+        .onChange(of: \.standup) { oldValue, newValue in
+            Reduce { state, action in
+                    .send(.delegate(.standupUpdate(newValue)))
+            }
         }
     }
 }
@@ -134,6 +168,9 @@ struct StandupDetailView: View {
                     viewStore.send(.editButtonTapped)
                 }
             }
+            .alert(store: store.scope(state: \.$alert, action: {
+                .alert($0)
+            }))
             // scope는 MVVM에서 내가 프로토콜로 ObservableObject를 뽑아내는 것과 유사하다
             .sheet(store: store.scope(state: \.$editStandup, action: {
                 .editStandup($0)
