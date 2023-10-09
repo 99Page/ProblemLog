@@ -40,3 +40,6 @@ let keyPath = \Animal.hello
 // 미리 지정해둔 keyPath값으로 변경하기
 animal[keyPath: keyPath] = "horrrrrrrr"
 print(animal)
+
+
+// rebase1 
