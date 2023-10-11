@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Fecit/Projects/FecitViewPackage/Sources/Global/PopGesture/PopGesture.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PopupStudy/PopupStudy.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ToolbarStudy/ToolbarStudy.xcodeproj">
+   </FileRef>
+</Workspace>
