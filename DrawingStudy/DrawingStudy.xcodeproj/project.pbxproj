@@ -16,6 +16,7 @@
 		155151E82ADF7D4D008D7807 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155151E72ADF7D4D008D7807 /* BadgeBackground.swift */; };
 		155151EB2ADF7F48008D7807 /* CustomDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155151EA2ADF7F48008D7807 /* CustomDrawingView.swift */; };
 		155151ED2ADFAA9E008D7807 /* PathCurvePractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155151EC2ADFAA9E008D7807 /* PathCurvePractiveView.swift */; };
+		155BAF1E2AE0AE6F005ECB14 /* ViewPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BAF1D2AE0AE6F005ECB14 /* ViewPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		155151E72ADF7D4D008D7807 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		155151EA2ADF7F48008D7807 /* CustomDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawingView.swift; sourceTree = "<group>"; };
 		155151EC2ADFAA9E008D7807 /* PathCurvePractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathCurvePractiveView.swift; sourceTree = "<group>"; };
+		155BAF1D2AE0AE6F005ECB14 /* ViewPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		155151D32ADF7A71008D7807 /* DrawingStudy */ = {
 			isa = PBXGroup;
 			children = (
+				155BAF1C2AE0AE5D005ECB14 /* ViewPoint */,
 				155151E92ADF7F38008D7807 /* Custom */,
 				155151E42ADF7B92008D7807 /* Drawing paths and shapes */,
 				155151D42ADF7A71008D7807 /* DrawingStudyApp.swift */,
@@ -96,6 +99,14 @@
 				155151EC2ADFAA9E008D7807 /* PathCurvePractiveView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		155BAF1C2AE0AE5D005ECB14 /* ViewPoint */ = {
+			isa = PBXGroup;
+			children = (
+				155BAF1D2AE0AE6F005ECB14 /* ViewPoint.swift */,
+			);
+			path = ViewPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				155151EB2ADF7F48008D7807 /* CustomDrawingView.swift in Sources */,
 				155151ED2ADFAA9E008D7807 /* PathCurvePractiveView.swift in Sources */,
 				155151D52ADF7A71008D7807 /* DrawingStudyApp.swift in Sources */,
+				155BAF1E2AE0AE6F005ECB14 /* ViewPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
