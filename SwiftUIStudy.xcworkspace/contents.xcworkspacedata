@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PlaceholdingTextEditor/PlaceholdingTextEditor.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DrawingStudy/DrawingStudy.xcodeproj">
    </FileRef>
    <FileRef
