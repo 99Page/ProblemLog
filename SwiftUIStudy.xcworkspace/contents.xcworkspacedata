@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/page/Desktop/CaseStudy/RoundendRectangleStudy/RoundedRectangleStudy.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PlaceholdingTextEditor/PlaceholdingTextEditor.xcodeproj">
    </FileRef>
    <FileRef
