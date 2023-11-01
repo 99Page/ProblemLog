@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BindingConventionStudy/BindingConventionStudy.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PopupStudy/../README.md">
+   </FileRef>
+   <FileRef
       location = "group:/Users/page/Desktop/CaseStudy/Viewmodel-Delegate-Study/ViewmodelDelegateStudy.xcodeproj">
    </FileRef>
    <FileRef
