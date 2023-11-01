@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MVVMConformStudy/MVVMConformStudy.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BindingConventionStudy/BindingConventionStudy.xcodeproj">
    </FileRef>
    <FileRef
