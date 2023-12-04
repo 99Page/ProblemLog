@@ -30,6 +30,10 @@ struct RefreshablePaginatedScrollView<Content: View>: View {
             VStack {
                 view()
                 
+                if viewModel.model.isProgressViewPresented {
+                    ProgressView()
+                }
+                
                 offsetProviderView()
             }
         } onRefresh: {

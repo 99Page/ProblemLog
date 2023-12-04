@@ -12,6 +12,10 @@ struct PaginationModel {
     var fetchTriggerOffset: CGFloat = .zero
     var state: PaginationState = .wait
     
+    var isProgressViewPresented: Bool {
+        state == .loading
+    }
+    
     var isFetchEnabeld: Bool {
         isFetchTriggerInScreen && state == .wait
     }
