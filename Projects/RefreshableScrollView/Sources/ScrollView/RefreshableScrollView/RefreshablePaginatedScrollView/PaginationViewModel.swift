@@ -21,7 +21,7 @@ final class PaginationViewModel: ObservableObject {
         guard model.isFetchEnabeld else { return }
         model.state = .loading
         fetch()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.model.state = .wait
         }
     }
