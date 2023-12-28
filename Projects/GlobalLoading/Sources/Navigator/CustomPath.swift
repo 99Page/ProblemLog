@@ -11,6 +11,7 @@ import SwiftUI
 enum CustomPath: Hashable {
     case loadingCaller(LoadingCallerModel)
     case partiallyLoading(LocalLoadingModel)
+    case semaphore
     
     @ViewBuilder
     var destination: some View {
@@ -19,6 +20,8 @@ enum CustomPath: Hashable {
             LoadingCallerView(model: model)
         case .partiallyLoading(let localLoadingModel):
             LocalLoadingView(localLoadingModel)
+        case .semaphore:
+            SemaphoreView()
         }
     }
 }

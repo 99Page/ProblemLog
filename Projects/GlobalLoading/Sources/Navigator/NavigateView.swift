@@ -23,6 +23,10 @@ struct NavigateView: View {
                 Button("Global loading caller") {
                     navigator.navigate(to: .loadingCaller(.init(text: "First view", shouldNavigateAfterLoading: true)))
                 }
+                
+                Button("Semaphore") {
+                    navigator.navigate(to: .semaphore)
+                }
             }
             .navigationDestination(for: CustomPath.self) {
                 $0.destination
