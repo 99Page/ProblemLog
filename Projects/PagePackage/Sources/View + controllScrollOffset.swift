@@ -25,3 +25,21 @@ public extension View {
             }
     }
 }
+
+
+public extension View {
+    func backgroundCGFloat(keyPath: KeyPath<CGRect, CGFloat>,
+                           nameSpace: CoordinateSpace,
+                           closure: @escaping (CGFloat) -> ()) -> some View {
+        self
+            .background {
+                GeometryReader { geometry in
+                    let float = geometry.frame(in: nameSpace)[keyPath: keyPath]
+                    Color.clear
+                        .onAppear {
+                            closure(float)
+                        }
+                }
+            }
+    }
+}
